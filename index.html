@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIET College Gate Entry/Exit System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BIET College Gate Entry/Exit System</h1>
+
+    <!-- Entry Form -->
+    <div class="form-container">
+      <h2>Record Entry</h2>
+      <form id="entryForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="rollNumber" placeholder="Roll Number" required>
+        <input type="text" id="purpose" placeholder="Purpose" required>
+        <button type="submit">Submit Entry</button>
+      </form>
+    </div>
+
+    <!-- Exit Form -->
+    <div class="form-container">
+      <h2>Record Exit</h2>
+      <form id="exitForm">
+        <input type="text" id="exitRollNumber" placeholder="Roll Number" required>
+        <button type="submit">Submit Exit</button>
+      </form>
+    </div>
+
+    <!-- Entry/Exit Logs -->
+    <div class="logs-container">
+      <h2>Entry/Exit Logs</h2>
+      <table id="logsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>Entry Time</th>
+            <th>Exit Time</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Logs will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
