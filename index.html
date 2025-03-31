@@ -16,7 +16,14 @@
       <form id="entryForm">
         <input type="text" id="name" placeholder="Name" required>
         <input type="text" id="rollNumber" placeholder="Roll Number" required>
-        <input type="text" id="purpose" placeholder="Purpose" required>
+        <select id="purpose" required>
+          <option value="">Select Purpose</option>
+          <option value="Class">Class</option>
+          <option value="Library">Library</option>
+          <option value="Lab Work">Lab Work</option>
+          <option value="Meeting">Meeting</option>
+          <option value="Other">Other</option>
+        </select>
         <button type="submit">Submit Entry</button>
       </form>
     </div>
@@ -30,9 +37,23 @@
       </form>
     </div>
 
+    <!-- Email Settings (Admin Only) -->
+    <div class="admin-settings">
+      <h2>Admin Settings</h2>
+      <form id="emailSettingsForm">
+        <input type="email" id="deanEmail" placeholder="Dean's Email" required>
+        <input type="time" id="reportTime" value="23:59" required>
+        <button type="submit">Save Settings</button>
+      </form>
+    </div>
+
     <!-- Entry/Exit Logs -->
     <div class="logs-container">
       <h2>Entry/Exit Logs</h2>
+      <div class="logs-controls">
+        <button id="exportTodayBtn">Export Today's Logs</button>
+        <button id="sendNowBtn">Send Report Now</button>
+      </div>
       <table id="logsTable">
         <thead>
           <tr>
@@ -41,6 +62,7 @@
             <th>Entry Time</th>
             <th>Exit Time</th>
             <th>Purpose</th>
+            <th>Duration</th>
           </tr>
         </thead>
         <tbody>
