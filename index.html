@@ -13,9 +13,9 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="notice.html">Notice</a></li>
-      <li><a href="media.html">Media</a></li>
+      <!-- <li><a href="media.html">Media</a></li> -->
       <li><a href="timetable.html">Time Table</a></li>
-      <li><a href="facerecognition.html">Face Recognition</a></li>
+      <!-- <li><a href="facerecognition.html">Face Recognition</a></li> -->
     </ul>
   </nav>
 
@@ -27,7 +27,10 @@
       <h2>Record Entry</h2>
       <form id="entryForm">
         <input type="text" id="name" placeholder="Name" required>
-        <input type="text" id="rollNumber" placeholder="Roll Number" required>
+        <option value="">Select  specific ID</option>
+        <input type="text" id="rollNumber" placeholder="Roll Number /Faculty ID" required>
+        <!-- <input type="text" id="faculty ID" placeholder="faculty ID" required> -->
+        <!-- <option value="Class">Faculty ID</option> -->
         <select id="purpose" required>
           <option value="">Select Purpose</option>
           <option value="Class">Class</option>
@@ -35,6 +38,7 @@
           <option value="Lab Work">Lab Work</option>
           <option value="Meeting">Meeting</option>
           <option value="Other">Other</option>
+          <!-- <option value="Faculty Member">Faculty Member</option> -->
         </select>
         <button type="submit">Submit Entry</button>
       </form>
@@ -42,9 +46,9 @@
 
     <!-- Exit Form -->
     <div class="form-container">
-      <h2>Record Exit</h2>
+      <h2>Record Exit </h2>
       <form id="exitForm">
-        <input type="text" id="exitRollNumber" placeholder="Roll Number" required>
+        <input type="text" id="exitRollNumber" placeholder="Roll Number /Faculty ID" required>
         <button type="submit">Submit Exit</button>
       </form>
     </div>
@@ -86,7 +90,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 BIET Jhansi. All Rights Reserved. | Designed by Ashish Tripathi</p>
+    <p>&copy; 2025 BIET Jhansi. All Rights Reserved. | Under the guidance of  Dr.yashpal singh sir <br> Akshat Verma <br> shivanshu yadav <br> Vivek mishra <br> aruj singh pal <br> sumit gupta </p>
   </footer>
 
   <script src="script.js"></script>
